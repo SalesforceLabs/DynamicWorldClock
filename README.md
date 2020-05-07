@@ -1,7 +1,7 @@
 [![Stars][stars-shield]][repository-url] [![Forks][forks-shield]][repository-url] [![Downloads][downloads-shield]][downloads-url] [![Issues][issues-shield]][issues-url]
 
 <div>
-	<img align="right" width="150" src="../../images/qbranch_logo.gif">
+	<img align="right" width="150" src="../master/images/qbranch_logo.gif">
 </div>
 
 # <a href="https://appexchange.salesforce.com/appxListingDetail?listingId=a0N3A00000FZGsLUAX">Dynamic World Clock</a>
