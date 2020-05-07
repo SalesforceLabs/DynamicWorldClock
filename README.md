@@ -1,4 +1,7 @@
+<!--
+Badges unsupported
 [![Stars][stars-shield]][repository-url] [![Forks][forks-shield]][repository-url] [![Downloads][downloads-shield]][downloads-url] [![Issues][issues-shield]][issues-url]
+-->
 
 <div>
 	<img align="right" width="150" src="../master/images/qbranch_logo.gif">
