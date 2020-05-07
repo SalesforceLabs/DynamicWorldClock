@@ -27,7 +27,7 @@
 
 ---
 
-## [Features]
+## Features
 
 Use this highly customisable component to give you a dynamic display of world time from any location in your organisation.
 
@@ -39,9 +39,9 @@ The component also allows for additional cities to be added through the design a
 - **Field flexibility -** Use any standard or custom field on the record to get the local time, for example Billing City or Shipping City.
 - **Additional times -** Add additional locations in the design attributes of the component.
 
-## [Getting Started]
+## Getting Started
 
-### [Prerequisites]
+### Prerequisites
 
 There are a few items you need to setup before installing:
 
@@ -50,7 +50,7 @@ There are a few items you need to setup before installing:
 
 --Appexchange install link with button
 
-## [Usage]
+## Usage
 
 There is only 1 Lightning Web Component available in the App Builder with this package:
 
@@ -104,7 +104,7 @@ private static void given_requiredEmailParametersAreProvided_when_anEmailIsInsta
 
 <div>
 	<img align="center" src="../images/screenshot3.png">
-</div>                                                                                                                                      |
+</div>
 
 ## Documentation
 
