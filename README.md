@@ -4,14 +4,12 @@
 	<img align="right" width="150" src="https://qbranch-sydney.s3-ap-southeast-2.amazonaws.com/qbranch_logo.gif">
 </div>
 
-# AppExchange Template
+# <a href="https://appexchange.salesforce.com/appxListingDetail?listingId=a0N3A00000FZGsLUAX">Dynamic World Clock</a>
 
+#### _Configurable record driven World Clock_
 
-#### *Catchy title about your AppExchange Offering!*
+#### This clock component can be shown on any record or app page, or even place it in the utility bar. It can detect location from standard and custom fields or use the system time along with a list of additional locations if desired.
 
-#### Sub-title about your AppExchange goes here with any relevant <a href="https://developer.salesforce.com/">links including AppExchange listing link...</a>
-
-		
 <h4 align="center">
 	<a href="#features">Features</a> |
 	<a href="#getting-started">Getting Started</a> |
@@ -24,33 +22,31 @@
 </h4>
 
 <p align="center">
-	<img src="images/silhouette_placeholder.gif">
+	<img src="images/Screenshot2.png">
 </p>
 
 ---
-	
 
-## [Features][wiki-features-url]
-Invocable actions, also known as dynamic actions, can be invoked from Flows, Processes and a common endpoint in the REST API. 
+## [Features]
 
-Salesforce administrators have the aforementioned declarative tools at their disposal, but currently only have a primitive ability to send emails. These custom Apex email actions provide the following additional capabilities:
+Use this highly customisable component to give you a dynamic display of world time from any location in your organisation.
 
-- **Available anywhere [@invocable methods](https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/apex_classes_annotation_InvocableMethod.htm) can be invoked.** For example, Lightning Flow Builder and Process Builder.
-- **Save as Activity.** Save a reference to the email as an activity feed item for a specified target object.
-- **Flexible recipients.** In additional to "To" recipients, send carbon copies (CC) and/or blind carbon copies (BCC).
-- **Lightning Email Templates.** Upgrade from Classic Email Templates to the newer Lightning Email Templates which allows global headers and footers.
-- **Include attachments.**  Attach Document, ContentVersion, or Attachment items to the email.
-- **Other [supported options](#supported-options).** Control [other](https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/apex_classes_email_outbound_single.htm#apex_Messaging_SingleEmailMessage_constructors) email options.
+This clock component can be shown on any record or app page, or even place it in the utility bar. It can detect location from standard and custom fields or use the system time along with a list of additional locations if desired.
 
+The component also allows for additional cities to be added through the design attributes to give the user ultimate flexibility.
 
-## [Getting Started][wiki-getting-started-url]
+- **Available on App/Record/Utility.** This component can be used on App Pages, Record Pages and even in the Utility Bar.
+- **Field flexibility.** .Use any standard or custom field on the record to get the local time, for example Billing City or Shipping City.
+- **Additional times.** Add additional locations in the design attributes of the component.
+
+## [Getting Started]
 
 ### [Prerequisites][wiki-prerequisites-url]
 
 There are a few items you need to setup before installing:
 
-1. You will need to [Enable Lightning Experience](https://trailhead.salesforce.com/en/content/learn/modules/lex_migration_introduction/lex_migration_introduction_administration) if you plan on using [Lightning Enhanced Letterheads and Email Templates](https://trailhead.salesforce.com/en/content/learn/projects/customize-an-org-to-support-a-new-business-unit/configure-an-email-letterhead-and-template).
-2. You will need to [Enable My Domain](https://trailhead.salesforce.com/en/content/learn/modules/identity_login/identity_login_my_domain) if you plan on using [Lightning Enhanced Letterheads and Email Templates](https://trailhead.salesforce.com/en/content/learn/projects/customize-an-org-to-support-a-new-business-unit/configure-an-email-letterhead-and-template).
+1. You will need to [Enable Lightning Experience](https://trailhead.salesforce.com/en/content/learn/modules/lex_migration_introduction/lex_migration_introduction_administration).
+2. You will need to [Enable My Domain](https://trailhead.salesforce.com/en/content/learn/modules/identity_login/identity_login_my_domain).
 
 ### [Install][wiki-install-url]
 
@@ -61,7 +57,7 @@ Deploy the actions:
        src="https://raw.githubusercontent.com/afawcett/githubsfdeploy/master/src/main/webapp/resources/img/deploy.png">
 </a>
 
-<a style="margin-right: 40%;" href="https://deploy-to-sfdx.com">
+<a style="margin-right: 40%;" href="https://deploy-to-sfdx.com?template=https://github.com/wadewegner/sfdx-simple">
   <img align="right" alt="Deploy using SFDX"
        src="https://deploy-to-sfdx.com/dist/assets/images/DeployToSFDX.svg">
 </a>
@@ -71,7 +67,6 @@ Deploy the actions:
 3. Login to your Org.
 4. Deploy the code.
 5. [Assign](https://help.salesforce.com/articleView?id=perm_sets_assigning.htm&type=5) the qsyd_Invocable_Email_Actions Permission Set to any users that will trigger email sends.
-
 
 ## [Usage][wiki-usage-url]
 
@@ -97,8 +92,7 @@ To declaratively invoke these actions, do the following:
 
 > An Apex error occurred: qsyd_InvocableEmailBase.InvocableEmailException: >>> qsyd_InvocableEmailAction.sendEmail failed with exception: >>> Exception executing qsyd_InvocableEmailBase.send: **Recipient not provided. Please provide at least one of the following: toAddress, ccAddress, bccAddress, targetObjectId**
 
-
-### [QSyd - Invocable Email Action][github-qsyd_InvocableEmailAction-url]
+### [QSyd - Invocable Email Action][github-qsyd_invocableemailaction-url]
 
 #### A simple use case for Process Builder:
 
@@ -151,10 +145,10 @@ private static void given_requiredEmailParametersAreProvided_when_anEmailIsInsta
         Test.stopTest();
     }
 ```
+
 \* Refer to the [test class](https://github.com/sfdc-qbranch/AppExchangeTemplate/blob/f595d2818fbd2201e6b7e3341cf03fc4054e9bbb/src/classes/qsyd_InvocableEmailActionTest.cls#L43) for complete working examples.
 
-
-### [QSyd - Invocable Email Template Action][github-qsyd_InvocableEmailTemplateAction-url]
+### [QSyd - Invocable Email Template Action][github-qsyd_invocableemailtemplateaction-url]
 
 #### Example lightning email template:
 
@@ -205,28 +199,27 @@ private static void given_requiredEmailParametersAreProvided_when_anEmailIsInsta
 
 ### Supported options
 
-| Option | Description 
-| ------ | ----------- 
-| `Recipient To Addresses` | Recipient To Addresses, Max 100, Comma Delimited
-| `Recipient Cc Addresses` | Recipient Cc Addresses, Max 25, Comma Delimited
-| `Recipient Bcc Addresses` | Recipient Bcc Addresses, Max 25, Comma Delimited
-| `Email Template Id or Name` | Id, Name, or Developer Name of Email Template
-| `Email Subject` | Email Subject
-| `Email Plain Text Body` | Email Plain Text Body
-| `Email Html Body` | Email Html Body
-| `Email Character Set` | The character set for the email. If this value is null, the user's default value is used
-| `Attachment Ids` | Comma delimited list of Document, ContentVersion, or Attachment Ids
-| `Target Object Id - Contact, Lead or User Id` | The Id of the contact, lead, or user to whom the email will be sent
-| `What Id` | If you specify a contact for the targetObjectId field, you can specify an optional whatId as well. Must be either a Account, Asset, Campaign, Case, Contract, Opportunity, Order, Product, Solution, Custom
-| `Parent Message Id` | This field identifies the email or emails to which this email is a reply (parent emails)
-| `Email Opt Out Policy` | If you added recipients by ID instead of email address and the Email Opt Out option is set, this method determines the behavior of the sendEmail() call
-| `Org Wide Email Address` | The associated org wide email address set up in Organization-Wide Addresses
-| `Save as Activity?` | This argument only applies if the recipient list is based on targetObjectId or targetObjectIds. If HTML email tracking is enabled for the organization, you will be able to track open rate
-| `Use Signature?` | Indicates whether the email includes an email signature if the user has one configured
-| `Treat Bodies as Template?` | The subject, plain text, and HTML text bodies of the email are treated as template data. The merge fields are resolved using the renderEmailTemplate method
-| `Treat Target Object as Recipient?` | If set to true, the targetObjectId (a contact, lead, or user) is the recipient of the email. If set to false, the targetObjectId is supplied as the WhoId field for template rendering but isn’t a recipient of the email
-| `Throw an Exception for Send Errors?` | Throw an exception containing any send results errors. The default is true
-
+| Option                                        | Description                                                                                                                                                                                                               |
+| --------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `Recipient To Addresses`                      | Recipient To Addresses, Max 100, Comma Delimited                                                                                                                                                                          |
+| `Recipient Cc Addresses`                      | Recipient Cc Addresses, Max 25, Comma Delimited                                                                                                                                                                           |
+| `Recipient Bcc Addresses`                     | Recipient Bcc Addresses, Max 25, Comma Delimited                                                                                                                                                                          |
+| `Email Template Id or Name`                   | Id, Name, or Developer Name of Email Template                                                                                                                                                                             |
+| `Email Subject`                               | Email Subject                                                                                                                                                                                                             |
+| `Email Plain Text Body`                       | Email Plain Text Body                                                                                                                                                                                                     |
+| `Email Html Body`                             | Email Html Body                                                                                                                                                                                                           |
+| `Email Character Set`                         | The character set for the email. If this value is null, the user's default value is used                                                                                                                                  |
+| `Attachment Ids`                              | Comma delimited list of Document, ContentVersion, or Attachment Ids                                                                                                                                                       |
+| `Target Object Id - Contact, Lead or User Id` | The Id of the contact, lead, or user to whom the email will be sent                                                                                                                                                       |
+| `What Id`                                     | If you specify a contact for the targetObjectId field, you can specify an optional whatId as well. Must be either a Account, Asset, Campaign, Case, Contract, Opportunity, Order, Product, Solution, Custom               |
+| `Parent Message Id`                           | This field identifies the email or emails to which this email is a reply (parent emails)                                                                                                                                  |
+| `Email Opt Out Policy`                        | If you added recipients by ID instead of email address and the Email Opt Out option is set, this method determines the behavior of the sendEmail() call                                                                   |
+| `Org Wide Email Address`                      | The associated org wide email address set up in Organization-Wide Addresses                                                                                                                                               |
+| `Save as Activity?`                           | This argument only applies if the recipient list is based on targetObjectId or targetObjectIds. If HTML email tracking is enabled for the organization, you will be able to track open rate                               |
+| `Use Signature?`                              | Indicates whether the email includes an email signature if the user has one configured                                                                                                                                    |
+| `Treat Bodies as Template?`                   | The subject, plain text, and HTML text bodies of the email are treated as template data. The merge fields are resolved using the renderEmailTemplate method                                                               |
+| `Treat Target Object as Recipient?`           | If set to true, the targetObjectId (a contact, lead, or user) is the recipient of the email. If set to false, the targetObjectId is supplied as the WhoId field for template rendering but isn’t a recipient of the email |
+| `Throw an Exception for Send Errors?`         | Throw an exception containing any send results errors. The default is true                                                                                                                                                |
 
 ## [Documentation][wiki-url]
 
@@ -243,19 +236,22 @@ All tests should be run and pass when a change is made to the package and prior 
 ## [FAQs][wiki-faqs-url]
 
 #### Does it work in Communities?
+
 > Yes
 
 #### Does it work in Mobile?
+
 > Yes
 
 #### Does it work with Person Accounts?
+
 > Yes
 
 #### Does it support Internationalisation (i18n)?
+
 > Yes, labels can be translated using [Salesforce Translation Workbench](https://help.salesforce.com/articleView?id=workbench_overview.htm&type=5)
 
 #### Others?
-
 
 ## [Contributing](/CONTRIBUTING.md)
 
@@ -268,15 +264,14 @@ If you would like to join these awesome people, please refer to [contributing.md
 Special thanks to:
 
 - Q Branch Sydney for your continued support.
-- Everyone that has requested for, used and provided feedback on this project. 
-
+- Everyone that has requested for, used and provided feedback on this project.
 
 ## License
 
 [![License][license-shield]][license-url] Copyright © 2020 [Q Branch][author-url]
 
-
 <!--- Images -->
+
 [stars-shield]: https://img.shields.io/github/stars/sfdc-qbranch/AppExchangeTemplate?style=flat-square&color=green
 [forks-shield]: https://img.shields.io/github/forks/sfdc-qbranch/AppExchangeTemplate?style=flat-square
 [version-shield]: https://img.shields.io/github/tag/sfdc-qbranch/AppExchangeTemplate?label=release&color=green
@@ -285,6 +280,7 @@ Special thanks to:
 [license-shield]: https://img.shields.io/badge/License-MIT-yellow.svg
 
 <!--- Urls -->
+
 [repository-url]: https://github.com/sfdc-qbranch/AppExchangeTemplate
 [version-url]: https://github.com/sfdc-qbranch/AppExchangeTemplate/wiki/Release-Notes
 [downloads-url]: https://github.com/sfdc-qbranch/AppExchangeTemplate/releases
@@ -293,8 +289,6 @@ Special thanks to:
 [author-url]: http://github.com/paull10au
 [contributors-url]: https://github.com/sfdc-qbranch/AppExchangeTemplate/contributors
 [tests-url]: https://github.com/sfdc-qbranch/AppExchangeTemplate/tests
-
-
 [wiki-url]: https://github.com/sfdc-qbranch/AppExchangeTemplate/wiki
 [wiki-features-url]: https://github.com/sfdc-qbranch/AppExchangeTemplate/wiki/Features
 [wiki-getting-started-url]: https://github.com/sfdc-qbranch/AppExchangeTemplate/wiki/Getting-Started
@@ -302,6 +296,5 @@ Special thanks to:
 [wiki-install-url]: https://github.com/sfdc-qbranch/AppExchangeTemplate/wiki/Install
 [wiki-usage-url]: https://github.com/sfdc-qbranch/AppExchangeTemplate/wiki/Usage
 [wiki-faqs-url]: https://github.com/sfdc-qbranch/AppExchangeTemplate/wiki/Frequently-Asked-Questions
-
-[github-qsyd_InvocableEmailAction-url]: https://github.com/sfdc-qbranch/AppExchangeTemplate/blob/master/src/classes/qsyd_InvocableEmailAction.cls
-[github-qsyd_InvocableEmailTemplateAction-url]: https://github.com/sfdc-qbranch/AppExchangeTemplate/blob/master/src/classes/qsyd_InvocableEmailTemplateAction.cls
+[github-qsyd_invocableemailaction-url]: https://github.com/sfdc-qbranch/AppExchangeTemplate/blob/master/src/classes/qsyd_InvocableEmailAction.cls
+[github-qsyd_invocableemailtemplateaction-url]: https://github.com/sfdc-qbranch/AppExchangeTemplate/blob/master/src/classes/qsyd_InvocableEmailTemplateAction.cls
