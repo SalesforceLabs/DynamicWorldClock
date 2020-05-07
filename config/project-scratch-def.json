@@ -1,0 +1,13 @@
+{
+  "orgName": "Dynamic Clock Scratch Developer",
+  "edition": "Developer",
+  "features": [],
+  "settings": {
+    "orgPreferenceSettings": {
+      "s1DesktopEnabled": true,
+      "pathAssistantsEnabled": true,
+      "s1EncryptedStoragePref2": false,
+      "selfSetPasswordInApi": true
+    }
+  }
+}

@@ -1,0 +1,32 @@
+<template>
+    <template if:true={showCard}>
+        <lightning-card icon-name={icon} title={cardTitle}>
+            <template if:true={timesExist}>
+                <lightning-layout multiple-rows="true" class="slds-border_top">
+                    <template for:each={times} for:item="time">
+                        <lightning-layout-item key={time} size="12">
+                            <c-clock-digital input-time={time}></c-clock-digital>
+                        </lightning-layout-item>
+                    </template>
+                </lightning-layout>
+            </template>
+            <template if:false={timesExist}>
+                <div class="slds-align_absolute-center">No times to display</div>
+            </template>
+        </lightning-card>
+    </template>
+    <template if:false={showCard}>
+        <template if:true={timesExist}>
+            <lightning-layout multiple-rows="true">
+                <template for:each={times} for:item="time">
+                    <lightning-layout-item key={time} size="12" padding="around-small">
+                        <c-clock-digital input-time={time}></c-clock-digital>
+                    </lightning-layout-item>
+                </template>
+            </lightning-layout>
+        </template>
+        <template if:false={timesExist}>
+            <div class="slds-align_absolute-center">No times to display</div>
+        </template>
+    </template>
+</template>

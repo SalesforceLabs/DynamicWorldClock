@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+  <types>
+    <name>ApexClass</name>
+    <members>timeStringFieldsFromRecord</members>
+    <members>timeStringFieldsFromRecordTest</members>
+  </types>
+  <types>
+    <name>CspTrustedSite</name>
+    <members>Google_API</members>
+  </types>
+  <types>
+    <name>FlexiPage</name>
+    <members>Home_Page_Default</members>
+  </types>
+  <types>
+    <name>LightningComponentBundle</name>
+    <members>clockDigital</members>
+    <members>dynamicClockFace</members>
+    <members>lwcInfoTable</members>
+  </types>
+  <version>48.0</version>
+</Package>

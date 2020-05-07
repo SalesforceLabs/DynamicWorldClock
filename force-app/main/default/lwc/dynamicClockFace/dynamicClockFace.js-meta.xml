@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>48.0</apiVersion>
+    <isExposed>true</isExposed>
+    <masterLabel>Dynamic World Clock</masterLabel>
+    <targets>
+        <target>lightning__AppPage</target>
+        <target>lightning__HomePage</target>
+        <target>lightning__RecordPage</target>
+        <target>lightning__UtilityBar</target>
+        <target>lightningCommunity__Page</target>
+        <target>lightningCommunity__Default</target>
+    </targets>
+    <targetConfigs>
+        <targetConfig targets="lightning__AppPage,lightning__HomePage,lightningCommunity__Default">
+            <property name="showCard" type="Boolean" default="true" label="Show Card" description="Hide/Show the surrounding SLDS card."/>
+            <property name="icon" type="String" default="custom:custom25" label="SLDS Icon" description="SLDS Icon names in the format 'utility:down' - 'utility' = category, and 'down' = specific icon to be displayed."/>
+            <property name="cardTitle" type="String" default="Dynamic World Clock" label="Card Title" description="The title of the clock card."/>
+            <property name="hideSystemTime" type="Boolean" default="false" label="Hide System Time" description="Hide/Show the system time."/>
+            <property name="additionalTimeLocations" type="String" default="Dublin,New York" label="Additional Time Locations" description="A comma seperated list of locations to derive time from."/>
+        </targetConfig>
+        <targetConfig targets="lightning__RecordPage">
+            <property name="showCard" type="Boolean" default="true" label="Show Card" description="Hide/Show the surrounding SLDS card."/>
+            <property name="icon" type="String" default="custom:custom25" label="SLDS Icon" description="SLDS Icon names in the format 'utility:down' - 'utility' = category, and 'down' = specific icon to be displayed."/>
+            <property name="cardTitle" type="String" default="Dynamic World Clock" label="Card Title" description="The title of the clock card."/>
+            <property name="sourceTimeField" type="String" label="Source Time Field" datasource="apex://timeStringFieldsFromRecord" description="Standard or Custom Field in which to derive a time from."/> 
+            <property name="hideSystemTime" type="Boolean" default="false" label="Hide System Time" description="Hide/Show the system time."/>
+            <property name="additionalTimeLocations" type="String" default="Dublin,New York" label="Additional Time Locations" description="A comma seperated list of locations to derive time from."/>
+        </targetConfig>
+        <targetConfig targets="lightning__UtilityBar">
+            <property name="showCard" type="Boolean" default="false" label="Show Card" description="Hide/Show the surrounding SLDS card."/>
+            <property name="icon" type="String" default="custom:custom25" label="SLDS Icon" description="SLDS Icon names in the format 'utility:down' - 'utility' = category, and 'down' = specific icon to be displayed."/>
+            <property name="cardTitle" type="String" default="Dynamic World Clock" label="Card Title" description="The title of the clock card."/>
+            <property name="hideSystemTime" type="Boolean" default="false" label="Hide System Time" description="Hide/Show the system time."/>
+            <property name="additionalTimeLocations" type="String" default="Dublin,New York" label="Additional Time Locations" description="A comma seperated list of locations to derive time from."/>
+        </targetConfig>
+    </targetConfigs>
+</LightningComponentBundle>

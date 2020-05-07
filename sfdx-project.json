@@ -1,0 +1,15 @@
+{
+    "packageDirectories": [{
+        "path": "force-app",
+        "default": true,
+        "package": "Dynamic World Clock v1",
+        "versionName": "ver 0.1",
+        "versionNumber": "0.1.0.NEXT"
+    }],
+    "namespace": "qdcf",
+    "sfdcLoginUrl": "https://login.salesforce.com",
+    "sourceApiVersion": "48.0",
+    "packageAliases": {
+        "Dynamic World Clock v1": "04t5I000001J0F1QAK"
+    }
+}
