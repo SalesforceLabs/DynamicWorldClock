@@ -22,7 +22,7 @@
 </h4>
 
 <p align="center">
-	<img src="images/Screenshot2.png">
+	<img src="images/screenshot2.png">
 </p>
 
 ---
