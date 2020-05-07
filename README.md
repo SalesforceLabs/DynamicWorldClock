@@ -70,22 +70,21 @@ To customise the component after placing it on the page invoke these actions, do
 #### A simple use case for Process Builder:
 
 <div>
-	<img align="center" src="/master/images/qbranch_logo.gif">
+	<img align="center" src="images/qbranch_logo.gif">
 </div>
 
 #### A simple use case for Lightning Flow:
 
 <div>
-	<img align="center" src="/master/images/qbranch_logo.gif">
-</div>
+	<img align="center" src="images/qbranch_logo.gif">
 <div>
-	<img align="center" src="/master/images/qbranch_logo.gif">
+	<img align="center" src="images/qbranch_logo.gif">
 </div>
 
 ### Supported config options
 
 <div>
-	<img align="center" src="../images/screenshot3.png">
+	<img align="center" src="images/screenshot3.png">
 </div>
 
 ## Documentation
