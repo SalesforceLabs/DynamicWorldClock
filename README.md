@@ -52,12 +52,7 @@ There are a few items you need to setup before installing:
 
 Deploy the actions:
 
-<a style="margin-right: 40%;" href="https://githubsfdeploy.herokuapp.com?owner=paull10au&repo=qsyd_InvocableEmailActions&ref=master">
-  <img align="right" alt="Deploy to Salesforce"
-       src="https://raw.githubusercontent.com/afawcett/githubsfdeploy/master/src/main/webapp/resources/img/deploy.png">
-</a>
-
-<a style="margin-right: 40%;" href="https://deploy-to-sfdx.com?template=https://github.com/wadewegner/sfdx-simple">
+<a style="margin-right: 40%;" href="https://deploy-to-sfdx.com?template=https://github.com/sfdc-qbranch/DynamicWorldClock">
   <img align="right" alt="Deploy using SFDX"
        src="https://deploy-to-sfdx.com/dist/assets/images/DeployToSFDX.svg">
 </a>
