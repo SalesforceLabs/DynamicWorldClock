@@ -70,35 +70,17 @@ To customise the component after placing it on the page invoke these actions, do
 #### A simple use case for Process Builder:
 
 <div>
-	<img align="center" src="../../images/qsyd_InvocableEmailAction_ProcessBuilder_parameters.png">
+	<img align="center" src="/master/images/qbranch_logo.gif">
 </div>
 
 #### A simple use case for Lightning Flow:
 
 <div>
-	<img align="center" src="../../images/qsyd_InvocableEmailAction_Flow_parameters_1.png">
+	<img align="center" src="/master/images/qbranch_logo.gif">
 </div>
 <div>
-	<img align="center" src="../../images/qsyd_InvocableEmailAction_Flow_parameters_2.png">
+	<img align="center" src="/master/images/qbranch_logo.gif">
 </div>
-
-#### A programmatic example:
-
-```apex
-private static void given_requiredEmailParametersAreProvided_when_anEmailIsInstantiated_then_anEmailIsSent() {
-        qsyd_InvocableEmailAction.InvocableEmailParam param = new qsyd_InvocableEmailAction.InvocableEmailParam();
-        List<qsyd_InvocableEmailAction.InvocableEmailParam> params = new List<qsyd_InvocableEmailAction.InvocableEmailParam>();
-
-
-        List<qsyd_InvocableEmailResult> results = qsyd_InvocableEmailAction.sendEmail(params);
-        Integer invocations = Limits.getEmailInvocations();
-
-        // Email was sent
-        System.assertEquals(1, invocations);
-
-        Test.stopTest();
-    }
-```
 
 ### Supported config options
 
@@ -163,7 +145,6 @@ Special thanks to:
 <!--- Urls -->
 
 [repository-url]: https://github.com/sfdc-qbranch/DynamicWorldClock
-[version-url]: https://github.com/sfdc-qbranch/DynamicWorldClock/wiki/Release-Notes
 [downloads-url]: https://github.com/sfdc-qbranch/DynamicWorldClock/releases
 [issues-url]: https://github.com/sfdc-qbranch/DynamicWorldClock/issues
 [license-url]: https://opensource.org/licenses/BSD-3-Clause
