@@ -16,7 +16,9 @@
 	<a href="#usage">Usage</a> |
 	<a href="#faqs">FAQs</a> |
 	<a href="#documentation">Documentation</a> |
-    	<a href="#tests">Tests</a> |
+    <!--
+    <a href="#tests">Tests</a> |
+    -->
 	<a href="#contributing">Contributing</a> |
 	<a href="#acknowledgements">Acknowledgements</a> 🥰
 </h4>
@@ -91,9 +93,11 @@ To customise the component after placing it on the page invoke these actions, do
 
 Read the [Quip][quip-url] for external documentation on the component.
 
+<!---
 ## [Tests][tests-url]
 
 ADD JEST TESTS
+-->
 
 ## FAQs
 
