@@ -1,5 +1,5 @@
-<!--[![Stars][stars-shield]][repository-url] [![Forks][forks-shield]][repository-url] [![Downloads][downloads-shield]][downloads-url] [![Issues][issues-shield]][issues-url]
--->
+[![Stars][stars-shield]][repository-url] [![Forks][forks-shield]][repository-url] [![Downloads][downloads-shield]][downloads-url] [![Issues][issues-shield]][issues-url]
+
 <div>
 	<img align="right" width="150" src="../images/qbranch_logo.gif">
 </div>
@@ -35,9 +35,9 @@ This clock component can be shown on any record or app page, or even place it in
 
 The component also allows for additional cities to be added through the design attributes to give the user ultimate flexibility.
 
-- **Available on App/Record/Utility.** This component can be used on App Pages, Record Pages and even in the Utility Bar.
-- **Field flexibility.** .Use any standard or custom field on the record to get the local time, for example Billing City or Shipping City.
-- **Additional times.** Add additional locations in the design attributes of the component.
+- **Available on App/Record/Utility -** This component can be used on App Pages, Record Pages and even in the Utility Bar.
+- **Field flexibility -** Use any standard or custom field on the record to get the local time, for example Billing City or Shipping City.
+- **Additional times -** Add additional locations in the design attributes of the component.
 
 ## [Getting Started]
 
@@ -65,21 +65,21 @@ To customise the component after placing it on the page invoke these actions, do
 5. Populate other logically required fields, eg. At least 1 Recipient field (To, Cc, Bcc or Target Object Id)
 6. Optionally associate the email with a related record via the "What Id"
 
-### [Dynamic World Clock][github-qsyd_invocableemailaction-url]
+### Dynamic World Clock
 
 #### A simple use case for Process Builder:
 
 <div>
-	<img align="center" src="../images/qsyd_InvocableEmailAction_ProcessBuilder_parameters.png">
+	<img align="center" src="../../images/qsyd_InvocableEmailAction_ProcessBuilder_parameters.png">
 </div>
 
 #### A simple use case for Lightning Flow:
 
 <div>
-	<img align="center" src="../images/qsyd_InvocableEmailAction_Flow_parameters_1.png">
+	<img align="center" src="../../images/qsyd_InvocableEmailAction_Flow_parameters_1.png">
 </div>
 <div>
-	<img align="center" src="../images/qsyd_InvocableEmailAction_Flow_parameters_2.png">
+	<img align="center" src="../../images/qsyd_InvocableEmailAction_Flow_parameters_2.png">
 </div>
 
 #### A programmatic example:
@@ -106,15 +106,15 @@ private static void given_requiredEmailParametersAreProvided_when_anEmailIsInsta
 	<img align="center" src="../images/screenshot3.png">
 </div>                                                                                                                                      |
 
-## [Documentation][wiki-url]
+## Documentation
 
 Read the [Quip][quip-url] for external documentation on the component.
 
 ## [Tests][tests-url]
 
-ADD TESTS
+ADD JEST TESTS
 
-## [FAQs]
+## FAQs
 
 #### Does it work in Communities?
 
