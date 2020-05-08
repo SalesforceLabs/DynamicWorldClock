@@ -1,0 +1,27 @@
+<template>
+    <lightning-layout class="slds-border_bottom">
+        <lightning-layout-item padding="around-small" size="6">
+            <div class="slds-form-element">
+                <div class="slds-form-element__control">
+                    <div class="slds-form-element__static cityClass">
+                        {inputTime.timeZoneLabel}
+                    </div>
+                </div>
+                <span class="slds-form-element__label differenceClass">
+                    {timeDifference}
+                </span>
+            </div>
+        </lightning-layout-item>
+        <lightning-layout-item padding="around-small" size="6" class="slds-clearfix">
+            <div class="slds-float_right">
+                <div class="slds-form-element">
+                    <div class="slds-form-element__control">
+                        <div class="slds-form-element__static timeClass">
+                            <lightning-formatted-date-time value={outputTime} time-zone={inputTime.timeZoneId} hour="2-digit" minute="2-digit" second="2-digit"></lightning-formatted-date-time>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </lightning-layout-item>
+    </lightning-layout>
+</template>
