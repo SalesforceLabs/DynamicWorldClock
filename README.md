@@ -83,6 +83,8 @@ Navigate to your app or record page that you want to add the component to and cl
 	<img align="center" src="images/screenshot5.png">
 </div>
 
+---
+
 This will bring you to the App Builder for the specific page you clicked “Edit Page” from. Scroll down to the Custom - Managed section on the left hand side component list. From there you can drag the “Dynamic World Clock” component onto any section of the page as shown in the next screenshot below.
 
 <div>
@@ -105,17 +107,23 @@ To add the component to the Utility bar of a console app, you will need to know 
 	<img align="center" src="images/screenshot7.png">
 </div>
 
+---
+
 From this page, you will need to find the console app we noted from earlier and click the dropdown action button on the right hand side of its name and press “Edit”. This will open up the App Builder for the console app. From here we need to click “Utility Items (Desktop Only)” on the left hand vertical navigation. The resulting page should look like the screenshot below.
 
 <div>
 	<img align="center" src="images/screenshot8.png">
 </div>
 
+---
+
 From here, you can click on the “Add Utility Item” button. This will give you a list of all available components, but the component we are looking for is the “Dynamic World Clock” component that should be in the “Custom - Managed” section near the bottom. Once you click that, you will be presented with a list of configurable options that are split into two sections, “Utility Item Properties” & “Component Properties”. The “Component Properties” are explained in the Design Attributes screenshot above. There are default attributes in place but please feel free to customise these to suit your needs, in particular the “Hide System Time” & “Additional Time Locations” fields as they control the locations that are shown in the component. Once you’re happy with your selections. Please press the save button at the bottom of the page. Screenshot below.
 
 <div>
 	<img align="center" src="images/screenshot9.png">
 </div>
+
+---
 
 Once you have saved this page, you can press the “Back” button on the top right of the page which will bring you back to setup. From here use the app launcher to navigate back to your console app to see the component in action.
 
@@ -124,6 +132,8 @@ See the screenshot below for utility bar view of the component and note the “S
 <div>
 	<img align="center" src="images/screenshot10.png">
 </div>
+
+---
 
 ### Supported config options
 
