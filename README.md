@@ -1,10 +1,5 @@
-<!--
-Badges unsupported
-[![Stars][stars-shield]][repository-url] [![Forks][forks-shield]][repository-url] [![Downloads][downloads-shield]][downloads-url] [![Issues][issues-shield]][issues-url]
--->
-
 <div>
-	<img align="right" width="150" src="../master/images/qbranch_logo.gif">
+	<img align="right" width="150" src="images/qbranch_logo.gif">
 </div>
 
 # <a href="https://appexchange.salesforce.com/appxListingDetail?listingId=a0N3A00000FZGsLUAX">Dynamic World Clock</a>
@@ -19,9 +14,7 @@ Badges unsupported
 	<a href="#usage">Usage</a> |
 	<a href="#faqs">FAQs</a> |
 	<a href="#documentation">Documentation</a> |
-    <!--
     <a href="#tests">Tests</a> |
-    -->
 	<a href="#contributing">Contributing</a> |
 	<a href="#acknowledgements">Acknowledgements</a> 🥰
 </h4>
@@ -65,9 +58,10 @@ Please navigate to the AppExchange link below to install the component.
 
 ## Usage
 
-There is only 1 Lightning Web Component available in the App Builder with this package:
+There is only 1 Lightning Web Component available in the App Builder with this package - Dynamic World Clock:
 
-- Dynamic World Clock
+- [Adding components to a App or Record Page](#adding-components-to-a-app-or-record-page)
+- [Adding components to a Utility Bar](#adding-components-to-a-utility-bar)
 
 ### Dynamic World Clock
 
@@ -91,13 +85,9 @@ This will bring you to the App Builder for the specific page you clicked “Edit
 	<img align="center" src="images/screenshot6.png">
 </div>
 
-As you can see after dropping the component onto the page, there are a number of configurable attributes to the component. Here is an explanation of all the input values depending on which type of page you are using it on.
+---
 
-<div>
-	<img align="center" src="images/screenshot3.png">
-</div>
-
-Note that the only additional attribute between an App Page and a Record Page is the “Source Time Field”. When placed on a record page, this attribute gives you a dropdown list of all available fields on the object you have placed the component on. Available fields include String, Picklist and Address fields, however it should be noted that the user will need to have access to the selected field in order for the component to read it.
+As you can see after dropping the component onto the page, there are a number of configurable attributes to the component. There is an explanation of all the input values depending on which type of page you are using it on [below](#supported-config-options).
 
 #### Adding components to a Utility Bar:
 
@@ -137,6 +127,8 @@ See the screenshot below for utility bar view of the component and note the “S
 
 ### Supported config options
 
+Note that the only additional attribute between an App Page and a Record Page is the “Source Time Field”. When placed on a record page, this attribute gives you a dropdown list of all available fields on the object you have placed the component on. Available fields include String, Picklist and Address fields, however it should be noted that the user will need to have access to the selected field in order for the component to read it.
+
 <div>
 	<img align="center" src="images/screenshot3.png">
 </>
@@ -145,11 +137,9 @@ See the screenshot below for utility bar view of the component and note the “S
 
 Read the [Quip][quip-url] for external documentation on the component.
 
-<!---
 ## [Tests][tests-url]
 
-ADD JEST TESTS
--->
+To be added...
 
 ## FAQs
 
