@@ -147,6 +147,7 @@ To be added...
 
 > Yes
 
+<!--
 #### Does it work in Mobile?
 
 > No, but this is on the roadmap
@@ -154,6 +155,7 @@ To be added...
 #### Does it work with Person Accounts?
 
 > Yes
+-->
 
 #### Does it support Internationalisation (i18n)?
 
