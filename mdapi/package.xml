@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
     <types>
         <members>timeStringFieldsFromRecord</members>
@@ -10,13 +10,8 @@
         <name>CspTrustedSite</name>
     </types>
     <types>
-        <members>Home_Page_Default</members>
-        <name>FlexiPage</name>
-    </types>
-    <types>
         <members>clockDigital</members>
         <members>dynamicClockFace</members>
-        <members>lwcInfoTable</members>
         <name>LightningComponentBundle</name>
     </types>
     <version>48.0</version>
