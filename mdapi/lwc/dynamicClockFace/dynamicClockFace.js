@@ -9,6 +9,8 @@ import {
     getRecord
 } from 'lightning/uiRecordApi';
 
+const API_KEY = '';
+
 export default class dynamicClockFace extends LightningElement {
     @api recordId;
     @api showCard;
@@ -66,7 +68,7 @@ export default class dynamicClockFace extends LightningElement {
             await fetch(
                     'https://maps.googleapis.com/maps/api/geocode/json?' +
                     'address=' + theTimezone +
-                    '&key=<INSERT API KEY HERE>', {
+                    '&key=' + API_KEY, {
                         method: "GET"
                     })
                 .then((geoResponse) => {
@@ -79,7 +81,7 @@ export default class dynamicClockFace extends LightningElement {
                                 'https://maps.googleapis.com/maps/api/timezone/json?' +
                                 'location=' + jsonGeoResponse.results[0].geometry.location.lat + ',' + jsonGeoResponse.results[0].geometry.location.lng +
                                 '&timestamp=' + Date.now().toString().substring(0, 10) +
-                                '&key=<INSERT API KEY HERE>', {
+                                '&key=' + API_KEY, {
                                     method: "GET"
                                 })
                             .then((timeResponse) => {
