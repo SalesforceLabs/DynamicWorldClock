@@ -79,7 +79,7 @@ export default class dynamicClockFace extends LightningElement {
                                 'https://maps.googleapis.com/maps/api/timezone/json?' +
                                 'location=' + jsonGeoResponse.results[0].geometry.location.lat + ',' + jsonGeoResponse.results[0].geometry.location.lng +
                                 '&timestamp=' + Date.now().toString().substring(0, 10) +
-                                '&key=AIzaSyD9u73fOFWY8NWtmkplP-AieEIeF-e1mS8', {
+                                '&key=<INSERT API KEY HERE>', {
                                     method: "GET"
                                 })
                             .then((timeResponse) => {
