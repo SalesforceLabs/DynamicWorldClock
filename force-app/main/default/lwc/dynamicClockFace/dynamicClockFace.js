@@ -9,7 +9,7 @@ import {
     getRecord
 } from 'lightning/uiRecordApi';
 
-const API_KEY = 'AIzaSyD9u73fOFWY8NWtmkplP-AieEIeF-e1mS8';
+const API_KEY = '<INSERT API KEY HERE>';
 
 export default class dynamicClockFace extends LightningElement {
     @api recordId;
