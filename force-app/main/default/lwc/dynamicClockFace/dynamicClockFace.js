@@ -66,7 +66,7 @@ export default class dynamicClockFace extends LightningElement {
             await fetch(
                     'https://maps.googleapis.com/maps/api/geocode/json?' +
                     'address=' + theTimezone +
-                    '&key=AIzaSyD9u73fOFWY8NWtmkplP-AieEIeF-e1mS8', {
+                    '&key=<INSERT API KEY HERE>', {
                         method: "GET"
                     })
                 .then((geoResponse) => {
