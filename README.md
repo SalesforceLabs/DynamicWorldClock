@@ -2,9 +2,9 @@
 	<img align="right" width="150" src="images/qbranch_logo.gif">
 </div>
 
-# <a href="https://appexchange.salesforce.com/appxListingDetail?listingId=a0N3A00000FZGsLUAX">Dynamic World Clock</a>
+# [Dynamic World Clock](https://appexchange.salesforce.com/appxListingDetail?listingId=a0N3A00000FZGsLUAXD)
 
-#### Configurable record driven World Clock
+#### _Configurable record driven World Clock_
 
 #### This clock component can be shown on any record or app page, or even place it in the utility bar. It can detect location from standard and custom fields or use the system time along with a list of additional locations if desired.
 
@@ -48,6 +48,8 @@ There are a few items you need to setup before installing:
 
 ### Install
 
+#### AppExchange
+
 Please navigate to the AppExchange link below to install the component.
 
 <p align="left">
@@ -55,6 +57,35 @@ Please navigate to the AppExchange link below to install the component.
 		<img width=200 src="images/available-on-appexchange.png">
 	</a>
 </p>
+
+#### SFDX
+
+Deploy the source:
+
+1. Clone this repository:
+
+```
+git clone git@github.com:sfdc-qbranch/DynamicWorldClock.git
+cd DynamicWorldClock
+```
+
+3. Authorize with your org and provide it with an alias (OrgAlias):
+
+```
+sfdx force:auth:web:login -a "OrgAlias"
+```
+
+4. Push the app to your org:
+
+```
+sfdx force:source:deploy --sourcepath force-app/main/default --json --loglevel fatal --targetusername "OrgAlias"
+```
+
+5. Open the default org:
+
+```
+sfdx force:org:open --targetusername "OrgAlias"
+```
 
 ## Usage
 
