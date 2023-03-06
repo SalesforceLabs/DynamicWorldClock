@@ -3,8 +3,6 @@ import TIME_ZONE from "@salesforce/i18n/timeZone";
 import { getRecord } from "lightning/uiRecordApi";
 import getAPIKey from "@salesforce/apex/apiKeyFromCustomMetadata.getAPIKey";
 
-const API_KEY = "AIzaSyD9u73fOFWY8NWtmkplP-AieEIeF-e1mS8";
-
 export default class dynamicClockFace extends LightningElement {
   @api recordId;
   @api showCard;
